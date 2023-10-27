@@ -18,8 +18,7 @@ In this tutorial we learn how to handle spring http errors in a easier way.
 ## Stack 🔧
   - Spring 3.1.5
   - Java 17
-  - starter-validation
-  - data-jpa
+  - hibernate/jpa
   - lombok
   - h2 database
 
