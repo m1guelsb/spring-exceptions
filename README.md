@@ -7,7 +7,7 @@
 <p align="center">
   <img alt="Spring" src="https://img.shields.io/badge/spring-%236DB33F.svg?style=for-the-badge&logo=spring&logoColor=white"/>
   
-  <img alt="Java" src="https://img.shields.io/badge/java-%236DB33F.svg?style=for-the-badge&logo=java&logoColor=white"/>
+  <img alt="Java" src="https://img.shields.io/badge/java-orange.svg?style=for-the-badge&logo=openjdk&logoColor=white"/>
 </p>
 
 ---
