@@ -1,13 +1,11 @@
 package com.m1guelsb.springexceptions.services;
 
-import java.util.List;
-import java.util.Optional;
-
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 
 import com.m1guelsb.springexceptions.dtos.PersonDto;
 import com.m1guelsb.springexceptions.entities.Person;
+import com.m1guelsb.springexceptions.exceptions.NotFoundException;
 import com.m1guelsb.springexceptions.repositories.PersonRepository;
 
 @Service
@@ -25,11 +23,7 @@ public class PersonService {
     return personRepository.save(person);
   }
 
-  public List<Person> findAll() {
-    return personRepository.findAll();
-  }
-
-  public Optional<Person> findById(Long id) {
-    return personRepository.findById(id);
+  public Person findById(Long id) throws NotFoundException {
+    return personRepository.findById(id).orElseThrow(() -> new NotFoundException("Person not found with id: " + id));
   }
 }
