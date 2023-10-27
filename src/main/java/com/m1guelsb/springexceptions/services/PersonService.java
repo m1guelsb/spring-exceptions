@@ -25,6 +25,6 @@ public class PersonService {
 
   public Person findById(Long id) throws NotFoundException {
     return personRepository.findById(id)
-        .orElseThrow(() -> new NotFoundException("Person not found: " + id));
+        .orElseThrow(() -> new NotFoundException("Person with id " + id + " not found"));
   }
 }
